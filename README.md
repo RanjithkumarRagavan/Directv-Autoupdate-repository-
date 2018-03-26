@@ -1,6 +1,2 @@
 # Directv-Autoupdate-repository-
-Directv firmware Auto Update Script with the Raspberry Pi and the Genie HR receiver.  Great for scheduling CE updates so you don't miss them!
-Download the files, read the steps.txt document 
-firmware.py (Actual script) 
-auto_script.st (Crontab script to run for timing and will output errors if any)
-lircd.conf (Remote commands are in this file)
+Directv firmware Auto Update Script with the Raspberry Pi and the Genie HR receiver.  Great for scheduling CE updates so you don't miss them! Download the files, read the steps.txt document.   The firmware.py is the actual comamnds script, the auto_script.st goes in the crontab file, will output errors if any when the script is run during the timeslot. The lircd.conf file has all the remote commands of the rc73 for the automation.  
