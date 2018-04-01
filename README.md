@@ -3,5 +3,7 @@ Directv firmware Auto Update Script with the Raspberry Pi and the Genie HR recei
 
 #################################
 Firmware.py reboots via the Menu
+
 Firmware2.py reboots via a relay hooked up to the reboot switch
+
 Firmware3.py reboots via http via the HR IP (adjust sleep timer for when to send the IR)
