@@ -1,22 +1,15 @@
 #!/usr/bin/env python
-#from lirc.lirc import Lirc 
-#lircParse = Lirc('/etc/lirc/lircd.conf') 
 #
-#import subprocess
-#rtn = subprocess.call(["irsend", "SEND_ONCE", "rc73", "KEY_mute"])
-# rtn should equal 0 if command ran without error SEND_ONCE rc73 KEY_MUTE
 import sys
 import os
 import time
 import requests
-
-#Send reboot command via Web
+#Send reboot command via Web (insert your IP)
 Print 'reboot process startin via Web' 
-ip = '192.168.1.46'
+ip = '192.168.X.X'
 cmd = r'http://{:s}:8080/serial/processCommand?cmd=FA96'.format(ip).encode('utf-8')
 response =  requests.get(cmd)
 time.sleep(7.2)
- 
 print ("Now to send update code")
 #upgrade firmware
 #os.system('irsend SEND_ONCE rc73 KEY_0')
