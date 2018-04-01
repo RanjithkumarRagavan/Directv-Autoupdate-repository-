@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# Reboot script by TechFan
 #
 import sys
 import os
