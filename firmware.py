@@ -59,9 +59,9 @@ os.system('irsend SEND_ONCE rc73 KEY_SELECT')
 time.sleep(5)
 print ("Final command to reboot")
 os.system('irsend SEND_ONCE rc73 KEY_SEND')
-#timing is key, 70 was the sweet spot but might need adjusting for others
-time.sleep(70)
-print ("Starting firmware upgrae sequence")
+#timing is key, the sweet spot but might need adjusting for others
+time.sleep(69)
+print ("Starting firmware upgrade sequence")
 #upgrade firmware process
 os.system('irsend SEND_ONCE rc73 KEY_0')
 time.sleep(0.5)
@@ -81,6 +81,3 @@ print ("Send 8")
 time.sleep(1)
 print ("DONE, HR should be updating")
 #enjoy unattended updates  
-#Send a guide TEST AFTER REBOOT if you want, just add back the following
-#time.sleep(1200)
-#os.system('irsend SEND_ONCE rc73 KEY_G')
